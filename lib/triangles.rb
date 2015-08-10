@@ -12,8 +12,6 @@ class Triangle
       'isosceles'
     else @triangle_sides.uniq.size == 3
       'scalene'
-    # else
-    #   true
     end
   end
 end
