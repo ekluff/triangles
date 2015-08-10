@@ -7,5 +7,10 @@ describe(Triangle) do
       test_triangle = Triangle.new(3, 3, 9)
       expect(test_triangle.triangles?()).to(eq(false))
     end
+
+    it("returns true if it is a triangle") do
+      test_triangle = Triangle.new(6, 5, 9)
+      expect(test_triangle.triangles?()).to(eq(true))
+    end
   end
 end
