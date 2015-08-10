@@ -8,6 +8,8 @@ class Triangle
       false
     elsif @triangle_sides.count(@triangle_sides[0]) == @triangle_sides.size
       'equilateral'
+    elsif @triangle_sides[0] == @triangle_sides[1] || @triangle_sides[1] == @triangle_sides[2]
+      'isosceles'
     else
       true
     end
