@@ -7,9 +7,9 @@ set(:show_exceptions, false)
 describe("the triangle path", {:type => :feature}) do
   it("tests user input of sides of triangle") do
     visit('/')
-    fill_in('A', :with => '2')
-    fill_in('B', :with => '3')
-    fill_in('C', :with => '4')
+    fill_in('SideA', :with => 2)
+    fill_in('SideB', :with => 3)
+    fill_in('SideC', :with => 4)
     click_button('Trianglize!')
     expect(page).to have_content('scalene')
   end
