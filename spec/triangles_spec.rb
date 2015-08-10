@@ -25,7 +25,7 @@ describe(Triangle) do
 
     it("returns 'scalene' if all sides are unequal") do
       test_triangle = Triangle.new(2, 3, 4)
-      expect(test_triangle.trianges?()).to(eq("scalene"))
+      expect(test_triangle.triangles?()).to(eq("scalene"))
     end
   end
 end

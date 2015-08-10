@@ -10,6 +10,8 @@ class Triangle
       'equilateral'
     elsif @triangle_sides[0] == @triangle_sides[1] || @triangle_sides[1] == @triangle_sides[2]
       'isosceles'
+    elsif @triangle_sides.uniq.size == @triangle_sides.size
+      'scalene'
     else
       true
     end
