@@ -6,11 +6,11 @@ class Triangle
   define_method(:triangles?) do
     if @triangle_sides[2] >= @triangle_sides[0] + @triangle_sides[1]
       false
-    elsif @triangle_sides.count(@triangle_sides[0]) == @triangle_sides.size
+    elsif @triangle_sides.uniq.size == 1
       'equilateral'
-    elsif @triangle_sides[0] == @triangle_sides[1] || @triangle_sides[1] == @triangle_sides[2]
+    elsif @triangle_sides.uniq.size == 2
       'isosceles'
-    else @triangle_sides.uniq.size == @triangle_sides.size
+    else @triangle_sides.uniq.size == 3
       'scalene'
     # else
     #   true
