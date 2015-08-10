@@ -5,7 +5,7 @@ class Triangle
 
   define_method(:triangles?) do
     if @triangle_sides[2] >= @triangle_sides[0] + @triangle_sides[1]
-      false
+      'false'
     elsif @triangle_sides.uniq.size == 1
       'equilateral'
     elsif @triangle_sides.uniq.size == 2
