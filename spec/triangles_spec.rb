@@ -8,10 +8,10 @@ describe(Triangle) do
       expect(test_triangle.triangles?()).to(eq(false))
     end
 
-    it("returns true if it is a triangle") do
-      test_triangle = Triangle.new(6, 5, 9)
-      expect(test_triangle.triangles?()).to(eq(true))
-    end
+    # it("returns true if it is a triangle") do
+    #   test_triangle = Triangle.new(6, 5, 9)
+    #   expect(test_triangle.triangles?()).to(eq(true))
+    # end
 
     it("returns 'equilateral' if all sides are equal") do
       test_triangle = Triangle.new(6, 6, 6)
