@@ -11,6 +11,6 @@ describe("the triangle path", {:type => :feature}) do
     fill_in('B', :with => '3')
     fill_in('C', :with => '4')
     click_button('Trianglize!')
-    expect(page).to have_content('Your inputs form a scalene triangle.')
+    expect(page).to have_content('scalene')
   end
 end
